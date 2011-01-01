@@ -1,0 +1,68 @@
+<project name="JsChilicat" default="assemble">
+
+    <property name="module_build" value="${build}/JsChilicat/production"/>
+    <property name="module_build_test" value="${build}/JsChilicat/test"/>
+    <mkdir dir="${module_build}"/>
+    <mkdir dir="${module_build_test}"/>
+
+    <target name="compile">
+        <javac srcdir="src/main/java" destdir="${module_build}">
+            <classpath>
+                <fileset dir="${production-libs}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <fileset dir="${dist}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="compile-test" depends="assemble">
+        <javac srcdir="src/test/java" destdir="${module_build_test}">
+            <classpath>
+                <fileset dir="${libs}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <fileset dir="${dist}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="assemble-test" depends="compile-test">
+        <copy todir="${module_build_test}">
+            <fileset dir="src/test/resources"/>
+        </copy>
+        <jar destfile="${dist}/test/jschilicat-test.jar" basedir="${module_build_test}"/>
+    </target>
+
+    <target name="assemble" depends="compile">
+        <copy todir="${module_build}">
+            <fileset dir="src/main/resources"/>
+        </copy>
+        <jar destfile="${dist}/production/jschilicat.jar" basedir="${module_build}"
+             manifest="src/main/resources/META-INF/MANIFEST.MF"/>
+    </target>
+
+    <target name="test" depends="assemble-test">
+        <junit printsummary="yes" haltonfailure="false">
+            <formatter type="xml"/>
+            <classpath>
+                <fileset dir="${libs}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <fileset dir="${dist}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+
+            <batchtest fork="yes" todir="${build}/junit">
+                <fileset dir="src/test/java">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+</project>

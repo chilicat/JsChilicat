@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="org.ejohn.ClassTest" tests="2" time="0.0010" timestamp="10-12-03T12:14:48"><system-out><![CDATA[03.12.2010 00:14:40 - Test Extned
+03.12.2010 00:14:40 - Create new Person
+03.12.2010 00:14:40 - Create new Ninja
+03.12.2010 00:14:40 - Check instance of...
+]]></system-out><testcase classname="org.ejohn.ClassTest" name="Interface" time="0.0"/><testcase classname="org.ejohn.ClassTest" name="Extend" time="0.0010"/></testsuite>

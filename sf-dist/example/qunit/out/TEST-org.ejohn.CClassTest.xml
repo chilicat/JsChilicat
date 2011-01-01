@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="org.ejohn.CClassTest" tests="2" time="0.0010" timestamp="10-12-03T12:14:48"><system-out><![CDATA[03.12.2010 00:14:40 - FAIL  Died on test #1: 'availableInOtherTest' is not defined.
+03.12.2010 00:14:40 - Test Extned
+03.12.2010 00:14:40 - Create new Person
+03.12.2010 00:14:40 - Create new Ninja
+03.12.2010 00:14:40 - Check instance of...
+]]></system-out><testcase classname="org.ejohn.CClassTest" name="Interface" time="0.0010"><error message="">FAIL  Died on test #1: 'availableInOtherTest' is not defined.
+</error></testcase><testcase classname="org.ejohn.CClassTest" name="Extend" time="0.0"/></testsuite>

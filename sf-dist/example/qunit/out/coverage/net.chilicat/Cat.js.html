@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>net.chilicat.Cat</title>
+    <script type="text/javascript" src="../syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../syntaxhighlighter/scripts/shBrushJScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../syntaxhighlighter/styles/jschilicat.css"/>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body style="background: white; font-family: Helvetica">
+
+<h3>Coverage report for 'net.chilicat.Cat'</h3>
+The line coverage is: 23,53 %
+<br/>
+Highlighted lines are not executed.
+
+
+<script type="syntaxhighlighter" class="brush: js; highlight: [6, 7, 8, 9, 13, 14, 17, 18, 21, 22, 23, 24, 26]">
+    <![CDATA[
+    var first = true;
+    var hello;
+    if(first) { hello = "A" } else { hello = "B" }
+
+
+    Cat = function(pawCount, tailLength, color) {
+        this.pawCount = pawCount; 
+        this.tailLength = tailLength;
+        this.color = color;
+    };
+
+    Cat.prototype =  {
+        getTailLength : function() {
+            return this.tailLength;
+        },
+
+        getPawCount: function() {
+            return this.pawCount;
+        },
+
+        setIfColor : function(color, value) {
+            if(this.color == color) {
+                this.value = value;
+                return true;
+            }
+            return false;
+        }
+    };
+
+    ]]>
+</script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<project name="JsChilicatParser">
+
+    <property name="module_build" value="${build}/JsChilicatParser/production"/>
+    <property name="module_build_test" value="${build}/JsChilicatParser/test"/>
+    <mkdir dir="${module_build}"/>
+    <mkdir dir="${module_build_test}"/>
+    <mkdir dir="${module_build}/junit"/>
+
+    <target name="compile">
+        <javac srcdir="src" destdir="${module_build}">
+            <classpath>
+                <fileset dir="${production-libs}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="compile-test" depends="assemble">
+        <javac srcdir="test" destdir="${module_build_test}">
+            <classpath>
+                <fileset file="${dist}/production/jschilicat-parser.jar"/>
+                <fileset dir="${libs}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="assemble" depends="compile">
+        <jar destfile="${dist}/production/jschilicat-parser.jar" basedir="${module_build}"/>
+    </target>
+
+    <target name="assemble-test" depends="compile-test">
+        <jar destfile="${dist}/test/jschilicat-parser-test.jar" basedir="${module_build_test}"/>
+    </target>
+
+    <target name="test" depends="assemble-test">
+        <junit printsummary="yes" haltonfailure="false">
+            <formatter type="xml"/>
+            <classpath>
+                <fileset dir="${libs}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <fileset dir="${dist}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+
+
+            <batchtest fork="yes" todir="${build}/junit">
+                <fileset dir="test">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+</project>

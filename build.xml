@@ -1,0 +1,51 @@
+<project name="JsTestEnv" default="assemble">
+
+    <property name="build" value="${basedir}/build"/>
+    <property name="dist" value="${basedir}/dist"/>
+
+    <property name="libs" value="${basedir}/libs"/>
+    <property name="production-libs" value="${libs}/production"/>
+    <property name="test-libs" value="${libs}/test"/>
+
+    <mkdir dir="${build}"/>
+    <mkdir dir="${dist}"/>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+    <target name="assemble">
+        <ant dir="JsChilicatParser" target="assemble"/>
+        <ant dir="JsChilicatServer" target="assemble"/>
+        <ant dir="JsChilicat" target="assemble"/>
+    </target>
+
+    <target name="test">
+        <mkdir dir="${build}/junit"/>
+        <ant dir="JsChilicatParser" target="test"/>
+        <ant dir="JsChilicatServer" target="test"/>
+        <ant dir="JsChilicat" target="test"/>
+    </target>
+
+    <target name="report" depends="test">
+        <junitreport todir="${build}/junit">
+            <fileset dir="${build}/junit">
+                <include name="**/TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${dist}/junit/html"/>
+        </junitreport>
+    </target>
+
+    <target name="sf-dist" depends="clean, assemble, report">
+        <copy todir="sf-dist/libs">
+            <fileset dir="${dist}/production">
+                <include name="**/*.jar"/>
+            </fileset>
+            <fileset dir="${production-libs}">
+                <include name="**/*.jar"/>
+            </fileset>
+        </copy>
+    </target>
+
+</project>

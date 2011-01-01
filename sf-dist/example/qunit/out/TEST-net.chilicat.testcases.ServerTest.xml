@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="net.chilicat.testcases.ServerTest" tests="4" time="0.8320000000000001" timestamp="10-12-02T09:50:36"><system-out><![CDATA[02.12.2010 21:50:33 - FAIL  failed, expected: "Daniel" result: undefined
+02.12.2010 21:50:33 - FAIL  failed, expected: "now" result: undefined
+02.12.2010 21:50:33 - FAIL  failed, expected: "Daniel" result: undefined
+02.12.2010 21:50:33 - FAIL  failed, expected: "now" result: undefined
+02.12.2010 21:50:33 - failed to open connection stream 
+  JavaException: java.io.FileNotFoundException: http://localhost:8182/html/include.html   JavaException: java.io.FileNotFoundException: http://localhost:8182/html/include.html 
+02.12.2010 21:50:33 - error while running async operation   InternalError: Can't find method java.io.FilterInputStream.read([C,number,number). (<jar-resource>/lib/env.js#1641)
+02.12.2010 21:50:33 - FAIL  Expected 2 assertions, but 1 were run
+]]></system-out><testcase classname="net.chilicat.testcases.ServerTest" name="Path Pattern Test" time="0.331"/><testcase classname="net.chilicat.testcases.ServerTest" name="Post Echo Test" time="0.182"><error message="">FAIL  failed, expected: "Daniel" result: undefined
+FAIL  failed, expected: "now" result: undefined
+FAIL  failed, expected: "Daniel" result: undefined
+FAIL  failed, expected: "now" result: undefined
+</error></testcase><testcase classname="net.chilicat.testcases.ServerTest" name="Counter Test" time="0.139"/><testcase classname="net.chilicat.testcases.ServerTest" name="Load include fragment" time="0.179"><error message="">failed to open connection stream 
+  JavaException: java.io.FileNotFoundException: http://localhost:8182/html/include.html   JavaException: java.io.FileNotFoundException: http://localhost:8182/html/include.html 
+error while running async operation   InternalError: Can't find method java.io.FilterInputStream.read([C,number,number). (&lt;jar-resource&gt;/lib/env.js#1641)
+FAIL  Expected 2 assertions, but 1 were run
+</error></testcase></testsuite>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="net.chilicat.testcases.HtmlTest" tests="1" time="0.0020" timestamp="10-12-02T11:12:53"><system-out><![CDATA[02.12.2010 23:12:49 - FAIL  failed, expected: 1 result: 0
+02.12.2010 23:12:49 - FAIL  Expected 4 assertions, but 3 were run
+]]></system-out><testcase classname="net.chilicat.testcases.HtmlTest" name="Elements exist" time="0.0020"><error message="">FAIL  failed, expected: 1 result: 0
+FAIL  Expected 4 assertions, but 3 were run
+</error></testcase></testsuite>

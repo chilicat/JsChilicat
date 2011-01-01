@@ -1,0 +1,47 @@
+<idea-plugin version="2" url="https://sourceforge.net/projects/jschilicat/">
+    <name>JsChilicat</name>
+    <description>
+        JsChilicat is a javascript test framework integration for intellij idea. JsChilicat is based on Rhino and EnvJs
+        for headless JavaScript testing.
+        As testframework is QUnit in use. The plugin will add a new Run configuration JsChilicat which let you configure
+        a source and a test directory.
+
+        It will present the test results in a JUnit style.
+
+        Added local server for Ajax tests. JsChilicate supports now to write a server interface completely in
+        java script. It allows the user to write a mock server for AJAX api tests in a easy way.
+        Currently is it possible to receive Forms and JSON objects ans to send JSON objects back.
+        Please download from the source forge project page the latest jsChilicat release it includes a test server
+        exmaple (http://sourceforge.net/projects/jschilicat/files).
+
+        Feedback is welcome.
+    </description>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+
+    <change-notes>Run Configurations allows to configure a java script server.</change-notes>
+
+    <version>1.2</version>
+    <vendor email="chilicat.dev@googlemail.com">Chilicat</vendor>
+    <idea-version since-build="8000"/>
+
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <configurationType implementation="net.chilicat.testenv.idea.TestEnvConfigurationType"/>
+        <!-- Add your extensions here -->
+    </extensions>
+</idea-plugin>

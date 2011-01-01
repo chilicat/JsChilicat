@@ -1,0 +1,85 @@
+<project name="JsChilicat Examples" default="default">
+    <property name="testfiles" value="${basedir}/intellij-test-project/src/test/js"/>
+
+    <property name="sources" value="${basedir}/intellij-test-project/src/main/js"/>
+
+    <property name="workingDir" value="${basedir}/out"/>
+
+    <target name="default" depends="qunit-test, qunit-report">
+        <echo message="See '${workingDir}/coverage' for coverage report. "/>
+        <echo message="See '${workingDir}/junit' for junit report. "/>
+    </target>
+
+    <target name="google-chrome">
+        <java jar="./libs/jsChilicat.jar" fork="true" failonerror="false">
+            <arg value="-libs"/>
+            <arg value="${basedir}/intellij-test-project/src/main/lib/jquery.js"/>
+            <arg value="-src"/>
+            <arg value="${sources}"/>
+            <arg value="-src-test"/>
+            <arg value="${testfiles}"/>
+            <arg value="-server"/>
+            <arg value="${testfiles}/server.jss"/>
+
+            <arg value="-workingDir"/>
+            <arg value="${workingDir}"/>
+            <arg value="-coverage"/>
+            <arg value="-junitReport"/>
+            <arg value="-framework"/>
+            <arg value="qunit"/>
+            <arg value="-chrome"/>
+        </java>
+    </target>
+
+    <target name="firefox">
+        <java jar="./libs/jsChilicat.jar" fork="true" failonerror="false">
+            <arg value="-libs"/>
+            <arg value="${basedir}/intellij-test-project/src/main/lib/jquery.js"/>
+            <arg value="-src"/>
+            <arg value="${sources}"/>
+            <arg value="-src-test"/>
+            <arg value="${testfiles}"/>
+            <arg value="-server"/>
+            <arg value="${testfiles}/server.jss"/>
+
+            <arg value="-workingDir"/>
+            <arg value="${workingDir}"/>
+            <arg value="-coverage"/>
+            <arg value="-junitReport"/>
+            <arg value="-framework"/>
+            <arg value="qunit"/>
+            <arg value="-firefox"/>
+        </java>
+    </target>
+
+
+    <target name="qunit-test">
+        <java jar="./libs/jsChilicat.jar" fork="true" failonerror="false">
+            <arg value="-libs"/>
+            <arg value="${basedir}/intellij-test-project/src/main/lib/jquery.js"/>
+            <arg value="-src"/>
+            <arg value="${sources}"/>
+            <arg value="-src-test"/>
+            <arg value="${testfiles}"/>
+            <arg value="-server"/>
+            <arg value="${testfiles}/server.jss"/>
+
+            <arg value="-workingDir"/>
+            <arg value="${workingDir}"/>
+            <arg value="-coverage"/>
+            <arg value="-junitReport"/>
+            <arg value="-framework"/>
+            <arg value="qunit"/>
+        </java>
+    </target>
+
+    <target name="qunit-report">
+        <mkdir dir="${workingDir}/junit"/>
+        <junitreport todir="${workingDir}/junit">
+            <fileset dir="${workingDir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${workingDir}/junit"/>
+        </junitreport>
+    </target>
+</project>

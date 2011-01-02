@@ -1,14 +1,9 @@
-== Welcome to ChiliUnit ==
-ChiliUnit is a JavaScript(ECMA 262) framework for headless testing. 
-ChiliUnit will use the Mozilla Rhino Engine to execute JavaScript unit 
+== Welcome to JsChilicat ==
+JsChilicat is a JavaScript(ECMA 262) framework for headless testing. 
+JsChilicat will use the Mozilla Rhino Engine to execute JavaScript unit 
 tests without opening a browser. The framework has EnvJs integrated which 
 will simulate the Browser Enviroment (DOM). As test framework is QUnit 
 integrated which is also used by JQuery.
-
-== What is about JsChilicat? == 
-JsChilicat found a new home at github. The project has been renamed from JsChilicat to 
-ChiliUnit to make it more obvious that the project is a Unit test framework/tool.
-
 
 
 

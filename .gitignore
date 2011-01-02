@@ -16,3 +16,6 @@ Thumbs.db
 
 # Out Dir
 out/**
+/sf-dist/out
+/dist
+/build

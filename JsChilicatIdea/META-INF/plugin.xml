@@ -1,4 +1,4 @@
-<idea-plugin version="2" url="https://sourceforge.net/projects/jschilicat/">
+<idea-plugin version="2" url="http://jschilicat.chilicat.net">
     <name>JsChilicat</name>
     <description>
         JsChilicat is a javascript test framework integration for intellij idea. JsChilicat is based on Rhino and EnvJs
@@ -11,8 +11,7 @@
         Added local server for Ajax tests. JsChilicate supports now to write a server interface completely in
         java script. It allows the user to write a mock server for AJAX api tests in a easy way.
         Currently is it possible to receive Forms and JSON objects ans to send JSON objects back.
-        Please download from the source forge project page the latest jsChilicat release it includes a test server
-        exmaple (http://sourceforge.net/projects/jschilicat/files).
+        Please download the latest jsChilicat release bundle form the project page.
 
         Feedback is welcome.
     </description>
@@ -22,6 +21,7 @@
 
 
     <change-notes>Run Configurations allows to configure a java script server.</change-notes>
+    <change-notes>Run Configurations allows to configure test execution browser (internal, chrome, firefox or htmlunit) .</change-notes>
 
     <version>1.2</version>
     <vendor email="chilicat.dev@googlemail.com">Chilicat</vendor>

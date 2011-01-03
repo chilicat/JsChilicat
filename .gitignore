@@ -1,6 +1,9 @@
+######################
 # compiled resources #
+######################
 *.class
 
+######################
 # OS generated files #
 ######################
 .DS_Store?
@@ -8,15 +11,19 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
+######################
 # Logs and databases #
 ######################
 *.log
 *.sql
 *.sqlite
 
+######################
 # Out Dir
+######################
 out/**
 sf-dist/out
 sf-dist/libs
 /dist
 /build
+JsChilicatIdea.zip

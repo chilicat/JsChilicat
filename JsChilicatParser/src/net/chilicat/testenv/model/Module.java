@@ -13,9 +13,9 @@ public class Module extends Element implements Iterable<TestCase> {
 
     public Module(String moduleName, String curentPackageName, String curentScript) {
         addAttribute(Long.toString(System.currentTimeMillis()));
-        addAttribute(moduleName);
-        addAttribute(curentPackageName);
-        addAttribute(curentScript);
+        addAttribute(moduleName == null ? "<unknown_module>" : moduleName);
+        addAttribute(curentPackageName == null ? "<unknown_package>" : curentPackageName);
+        addAttribute(curentScript == null ? "<unknown_script>" : curentScript);
 
     }
 

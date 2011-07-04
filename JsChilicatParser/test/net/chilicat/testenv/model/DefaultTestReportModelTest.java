@@ -1,6 +1,6 @@
 package net.chilicat.testenv.model;
 
-import net.chilicat.testenv.util.MessageBus;
+import net.chilicat.testenv.utils.MessageBus;
 import org.junit.Test;
 
 /**

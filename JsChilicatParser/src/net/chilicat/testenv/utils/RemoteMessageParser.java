@@ -1,4 +1,4 @@
-package net.chilicat.testenv.util;
+package net.chilicat.testenv.utils;
 
 import java.util.ArrayList;
 import java.util.List;

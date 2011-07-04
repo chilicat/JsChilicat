@@ -1,6 +1,6 @@
 package net.chilicat.testenv.core;
 
-import net.chilicat.testenv.util.AbstractMessageBus;
+import net.chilicat.testenv.utils.AbstractMessageBus;
 
 import java.io.PrintStream;
 

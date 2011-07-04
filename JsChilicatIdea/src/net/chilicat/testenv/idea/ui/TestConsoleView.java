@@ -18,7 +18,7 @@ import com.intellij.openapi.vfs.VirtualFileManager;
 import net.chilicat.testenv.idea.TestEnvConfiguration;
 import net.chilicat.testenv.model.DefaultTestReportModel;
 import net.chilicat.testenv.model.TestReportModel;
-import net.chilicat.testenv.util.RemoteMessageParser;
+import net.chilicat.testenv.utils.RemoteMessageParser;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;

@@ -1,4 +1,4 @@
-package net.chilicat.testenv.util;
+package net.chilicat.testenv.utils;
 
 import net.chilicat.testenv.model.BasicReportModelTests;
 import net.chilicat.testenv.model.DefaultTestReportModel;

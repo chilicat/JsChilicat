@@ -3,6 +3,7 @@ package net.chilicat.testenv;
 import net.chilicat.cmd.CommandArguments;
 import net.chilicat.cmd.Type;
 import net.chilicat.testenv.core.*;
+import net.chilicat.testenv.utils.JSLFileHandler;
 
 import java.io.File;
 import java.io.IOException;
@@ -64,7 +65,7 @@ public final class Main {
     }
 
     private static ExecutorType getExecutorType(CommandArguments args) {
-        for (ExecutorType type : ExecutorType.values()) {          
+        for (ExecutorType type : ExecutorType.values()) {
             if (args.getBoolean(type.toString(), false)) {
                 return type;
             }
@@ -154,22 +155,39 @@ public final class Main {
         return argList;
     }
 
-    private static List<File> toFileList(List<String> files, String errorMessage) {
+    private static List<File> toFileList(List<String> files, String errorMessage) throws IOException {
         List<File> libFileList = new ArrayList<File>();
-        StringBuffer error = new StringBuffer();
+        StringBuilder error = new StringBuilder();
         for (String fileStr : files) {
-            File file = new File(fileStr);
-            if (!file.exists()) {
-                error.append(errorMessage).append(fileStr);
-            } else {
-                libFileList.add(file);
-            }
+            final File file = new File(fileStr);
+            libFileList.addAll(expandFiles(errorMessage, error, file));
         }
 
-        if (files.size() != libFileList.size()) {
+        if (error.length() > 0) {
             System.err.println(error);
             throw new SetupFailedException(error.toString());
         }
         return libFileList;
     }
+
+
+    private static List<File> expandFiles(String errorMessage, StringBuilder error, File file) throws IOException {
+        if (!file.exists()) {
+            error.append(errorMessage).append(file.getPath());
+            return Collections.emptyList();
+        }
+
+        if (file.getName().endsWith(".jsl")) {
+            final List<File> read = new JSLFileHandler(file).read();
+            for (File tmp : read) {
+                if (!tmp.exists()) {
+                    error.append(errorMessage).append(tmp.getPath());
+                }
+            }
+            return read;
+        } else {
+            return Collections.singletonList(file);
+        }
+    }
+
 }

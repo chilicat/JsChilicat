@@ -1,7 +1,7 @@
 package net.chilicat.testenv.rhino;
 
-import net.chilicat.testenv.util.MessageBus;
-import net.chilicat.testenv.util.MessageBusFactory;
+import net.chilicat.testenv.utils.MessageBus;
+import net.chilicat.testenv.utils.MessageBusFactory;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Function;
 import org.mozilla.javascript.Scriptable;

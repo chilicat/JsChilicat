@@ -1,8 +1,8 @@
 package net.chilicat.testenv.model;
 
-import net.chilicat.testenv.util.AbstractMessageBus;
-import net.chilicat.testenv.util.MessageBus;
-import net.chilicat.testenv.util.MessageBusFactory;
+import net.chilicat.testenv.utils.AbstractMessageBus;
+import net.chilicat.testenv.utils.MessageBus;
+import net.chilicat.testenv.utils.MessageBusFactory;
 
 import javax.swing.event.EventListenerList;
 import java.util.ArrayList;

@@ -1,7 +1,6 @@
 package net.chilicat.testenv.core;
 
 import net.chilicat.testenv.server.HttpServer;
-import net.chilicat.testenv.util.MessageBus;
 
 import java.io.File;
 import java.util.List;

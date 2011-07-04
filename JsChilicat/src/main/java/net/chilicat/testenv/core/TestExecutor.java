@@ -1,7 +1,7 @@
 package net.chilicat.testenv.core;
 
 import net.chilicat.testenv.coverage.Coverage;
-import net.chilicat.testenv.util.MessageBus;
+import net.chilicat.testenv.utils.MessageBus;
 
 /**
  */

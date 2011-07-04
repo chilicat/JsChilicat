@@ -2,8 +2,8 @@ package net.chilicat.testenv.js;
 
 import net.chilicat.testenv.core.SetupFailedException;
 import net.chilicat.testenv.rhino.RhinoTestExecutor;
-import net.chilicat.testenv.util.MessageBus;
-import net.chilicat.testenv.util.MessageBusFactory;
+import net.chilicat.testenv.utils.MessageBus;
+import net.chilicat.testenv.utils.MessageBusFactory;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Script;
 import org.mozilla.javascript.Scriptable;

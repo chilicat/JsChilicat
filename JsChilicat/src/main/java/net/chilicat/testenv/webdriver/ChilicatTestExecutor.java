@@ -2,12 +2,11 @@ package net.chilicat.testenv.webdriver;
 
 import net.chilicat.testenv.core.SetupFailedException;
 import net.chilicat.testenv.core.TestConfig;
-import net.chilicat.testenv.core.TestUnitFramework;
 import net.chilicat.testenv.js.JsMessageBusInit;
 import net.chilicat.testenv.rhino.Defaults;
 import net.chilicat.testenv.rhino.TestEnvDebugger;
-import net.chilicat.testenv.util.AbstractMessageBus;
-import net.chilicat.testenv.util.MessageBus;
+import net.chilicat.testenv.utils.AbstractMessageBus;
+import net.chilicat.testenv.utils.MessageBus;
 import org.mozilla.javascript.*;
 
 import java.io.*;

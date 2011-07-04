@@ -11,8 +11,8 @@ import net.chilicat.testenv.model.DefaultTestReportModel;
 import net.chilicat.testenv.model.TestReportModel;
 import net.chilicat.testenv.report.ReportFactory;
 import net.chilicat.testenv.server.HttpServer;
-import net.chilicat.testenv.util.MessageBus;
-import net.chilicat.testenv.util.MessageBusFactory;
+import net.chilicat.testenv.utils.MessageBus;
+import net.chilicat.testenv.utils.MessageBusFactory;
 
 import java.io.File;
 import java.io.IOException;

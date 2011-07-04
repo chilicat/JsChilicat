@@ -57,6 +57,12 @@ public final class Utils {
     }
 
     public static void transfer(InputStream in, boolean closeIn, FileOutputStream out, boolean closeOut) throws IOException {
+        if(in == null) {
+            throw new NullPointerException("in");
+        }
+        if(out == null) {
+            throw new NullPointerException("out");
+        }
         try {
             byte[] bytes = new byte[1024];
             int res = 0;

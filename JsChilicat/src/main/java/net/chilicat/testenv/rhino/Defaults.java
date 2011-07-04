@@ -1,7 +1,7 @@
 package net.chilicat.testenv.rhino;
 
 import net.chilicat.testenv.js.JsMessageBusInit;
-import net.chilicat.testenv.util.MessageBus;
+import net.chilicat.testenv.utils.MessageBus;
 import org.mozilla.javascript.*;
 
 import java.io.FileNotFoundException;

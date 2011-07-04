@@ -6,7 +6,7 @@ import net.chilicat.testenv.core.resource.ResourceCollector;
 import net.chilicat.testenv.core.resource.Resources;
 import net.chilicat.testenv.coverage.Coverage;
 import net.chilicat.testenv.js.JsMessageBusInit;
-import net.chilicat.testenv.util.MessageBus;
+import net.chilicat.testenv.utils.MessageBus;
 import org.mozilla.javascript.*;
 
 import java.io.*;

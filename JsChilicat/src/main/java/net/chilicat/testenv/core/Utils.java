@@ -57,10 +57,10 @@ public final class Utils {
     }
 
     public static void transfer(InputStream in, boolean closeIn, FileOutputStream out, boolean closeOut) throws IOException {
-        if(in == null) {
+        if (in == null) {
             throw new NullPointerException("in");
         }
-        if(out == null) {
+        if (out == null) {
             throw new NullPointerException("out");
         }
         try {
@@ -151,4 +151,15 @@ public final class Utils {
     public static interface TextFilter {
         public boolean accept(String line);
     }
+
+    public static boolean isWindows() {
+        String os = System.getProperty("os.name").toLowerCase();
+        return os.startsWith("win");
+    }
+
+    public static boolean isMac() {
+        String os = System.getProperty("os.name").toLowerCase();
+        return os.startsWith("mac");
+    }
+
 }

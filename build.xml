@@ -10,6 +10,27 @@
     <mkdir dir="${build}"/>
     <mkdir dir="${dist}"/>
 
+
+    <target name="cls">
+        <path id="class.path">
+            <!-- include all jars in the lib directory and all sub-directories -->
+            <fileset dir="${production-libs}">
+                <include name="**/*.jar" />
+            </fileset>
+        </path>
+
+        <pathconvert property="relative.dir" refid="class.path">
+            <globmapper from="${production-libs}/*" to="./*" />
+        </pathconvert>
+
+        <property name="cls" value="${relative.dir}" />
+
+        <echo message="${cls}"/>
+
+
+    </target>
+
+
     <target name="clean">
         <delete dir="${build}"/>
         <delete dir="${dist}"/>

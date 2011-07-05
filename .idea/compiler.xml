@@ -23,6 +23,7 @@
       <entry name="?*.txt" />
       <entry name="?*.css" />
       <entry name="?*.jsl" />
+      <entry name="?*.exe" />
     </wildcardResourcePatterns>
     <annotationProcessing enabled="false" useClasspath="true" />
   </component>

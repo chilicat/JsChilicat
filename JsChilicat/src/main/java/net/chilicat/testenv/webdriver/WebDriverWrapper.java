@@ -27,13 +27,23 @@ package net.chilicat.testenv.webdriver;
  */
 public class WebDriverWrapper implements WebDriver {
     private final org.openqa.selenium.WebDriver driver;
+    private final Runnable run;
 
     public WebDriverWrapper(org.openqa.selenium.WebDriver driver) {
+        this(driver, null);
+    }
+
+    public WebDriverWrapper(org.openqa.selenium.WebDriver driver, Runnable run) {
         this.driver = driver;
+        this.run = run;
     }
 
     public void close() {
         driver.close();
+
+        if (run != null) {
+            run.run();
+        }
     }
 
     public void get(String location) {

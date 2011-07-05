@@ -1,5 +1,7 @@
 <idea-plugin version="2" url="http://jschilicat.chilicat.net">
     <name>JsChilicat</name>
+    <id>JsChilicat</id>
+
     <description>
         JsChilicat is a javascript test framework integration for intellij idea. JsChilicat is based on Rhino and EnvJs
         for headless JavaScript testing.
@@ -20,12 +22,11 @@
     <depends>com.intellij.modules.platform</depends>
 
 
-    <change-notes>Run Configurations allows to configure a java script server.</change-notes>
-    <change-notes>Run Configurations allows to configure test execution browser (internal, chrome, firefox or htmlunit) .</change-notes>
+    <change-notes>Intelij 10.5 compatible. Selenium upgrade.</change-notes>
 
-    <version>1.2</version>
-    <vendor email="chilicat.dev@googlemail.com">Chilicat</vendor>
-    <idea-version since-build="8000"/>
+    <version>1.2.1</version>
+    <vendor url="http://jschilicat.chilicat.net" email="dkuffner@chilicat.net">Chilicat</vendor>
+    <idea-version since-build="107.105"/>
 
 
     <application-components>

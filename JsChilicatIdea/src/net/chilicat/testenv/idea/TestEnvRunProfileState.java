@@ -58,7 +58,17 @@ public class TestEnvRunProfileState extends JavaCommandLineState {
         String thisPath = PathUtil.getJarPathForClass(getClass());
 
         File myPlugin = new File(PathManager.getPluginsPath(), "JsChilicatIdea");
+
+        if(!myPlugin.exists()) {
+            throw new Error("Plugin dir:  " + myPlugin);
+        }
+
         File lib = new File(myPlugin, "lib");
+
+        if(!myPlugin.exists()) {
+            throw new Error("lib dir:  " + lib);
+        }
+
 
         for (File file : lib.listFiles()) {
             if (file.getName().endsWith(".jar") && !file.getAbsolutePath().equals(thisPath)) {

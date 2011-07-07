@@ -26,8 +26,6 @@
         <property name="cls" value="${relative.dir}" />
 
         <echo message="${cls}"/>
-
-
     </target>
 
 

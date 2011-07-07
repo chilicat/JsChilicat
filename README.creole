@@ -1,9 +1,43 @@
 == Welcome to JsChilicat ==
-JsChilicat is a JavaScript(ECMA 262) framework for headless testing. 
-JsChilicat will use the Mozilla Rhino Engine to execute JavaScript unit 
+
+JsChilicat is a JavaScript(ECMA 262) framework for headless testing.
+JsChilicat will use the Mozilla Rhino Engine to execute JavaScript unit
 tests without opening a browser. The framework has EnvJs integrated which 
-will simulate the Browser Enviroment (DOM). As test framework is QUnit 
+will simulate the Browser Environment (DOM). As test framework is QUnit
 integrated which is also used by JQuery.
+
+== Prerequisite ==
+You need a installed JDK or JRE 6. It might also work with JDK/JRE 5 but I have developed on JDK 6.
+You need a JsChilicat distribution which can be found in the download section of the github project.
+https://github.com/chilicat/JsChilicat
+
+Or you have to build JsChilicat form the sources. To checkout the code please see github details.
+
+== Usage ==
+Download the distribution. Open a terminal or a console and go into the libs directory.
+In the libs directory you will find a jschilicat.jar. By issuing
+
+java -jar jschilicat.jar
+
+you will get a list of all available command parameters.
+
+JsChilicat has Selenium integrated which allows you to run your tests in different browsers.
+Currently we support Google Chrome and Firefox. We also support two headless browsers, the
+first is htmlunit from Selemium and the second is the JsChilicat internal. Both uses Rhino
+javascript engine underneath. The difference between those two browsers is the DOM emulation.
+The JsChilicat internal browser is currently the only one which supports the code coverage.
+
+Start tests in Firefox:
+java -jar jschilicat.jar -firefox
+
+Start tests in Google Chrome:
+java -jar jschilicat.jar -chrome
+
+Start test in htmlunit:
+java -jar jschilicat.jar -htmlunit
+
+Start test in JsChilicat internal:
+java -jar jschilicat.jar -chilicat
 
 
 

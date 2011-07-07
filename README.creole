@@ -26,6 +26,7 @@ Currently we support Google Chrome and Firefox. We also support two headless bro
 first is htmlunit from Selemium and the second is the JsChilicat internal. Both uses Rhino
 javascript engine underneath. The difference between those two browsers is the DOM emulation.
 The JsChilicat internal browser is currently the only one which supports the code coverage.
+The junit report is supported by all supported browsers
 
 Start tests in Firefox:
 java -jar jschilicat.jar -firefox
@@ -38,6 +39,40 @@ java -jar jschilicat.jar -htmlunit
 
 Start test in JsChilicat internal:
 java -jar jschilicat.jar -chilicat
+
+If you have selected your browser than you must set you working directory. The working director
+will contain the test result and coverage files. By default is the current directory the working directory
+
+java -jar jschilicat.jar -<browser> -workingDir=/dev/results
+
+Now we want to specify the our test sets. JsChilicat will differ between three sources: libraries, sources and tests.
+
+A library in is a third party javascript file for your project. For example jquery is a third party library. A
+javascript file which will be configured in the as library will not be tracked for code coverage and unit test reports.
+The sources are your javascript files which should be tested and measured (unit/coverage report) And finally the tests
+which are, as expected, your unit test files.
+
+The order of loading the liberties is always: libraries -> sources -> tests
+
+Lets issue a hypothetical test run:
+
+java -jar jschilicat.jar -<browser> -workingDir=/Users/jschilicat/dev/results \
+    -libs=/dev/libs -src=/dev/src -src-test=/dev/test/
+
+ As you can see I specified directories. For convenience reasons is it possible to do that.
+ What happening is that JsChilicat will search recursive for *.js files and includes them.
+ That's of course for many projects not solution to go because most javascript libraries expect
+ to be loaded in a certain order. That can be achieved by file lists. For example:
+
+ -libs=/dev/jquery.js;/dev/otherLib.js
+ -src=...
+ -src-test=...
+
+ Note: The separator is platform depended. Windows uses semi-colon (;) and mac uses colon (:)
+
+
+
+
 
 
 

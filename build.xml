@@ -40,10 +40,7 @@
         </junitreport>
     </target>
 
-    <target name="sf-dist" > <!-- depends="clean, assemble, report" -->
-		
-		<delete dir="sf-dist/libs/" />
-		
+    <target name="sf-dist" depends="clean, assemble, report, sf-dist-clean"> 
 		<copy todir="sf-dist/libs/">
             <fileset dir="${dist}/production">
                 <include name="**/*.jar"/>
@@ -66,5 +63,8 @@
 
     </target>
 	
+	<target name="sf-dist-clean"> 
+		<delete dir="sf-dist/libs/" />
+	</target>
 	
 </project>

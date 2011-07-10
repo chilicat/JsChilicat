@@ -18,44 +18,7 @@
     <list id="6abb13ea-d5e0-439f-a7cf-7046f818faa8" name="UI Improvments" comment="New implementation of Test" />
     <list id="ea7db0a5-7536-4894-8331-0a54c05be50d" name="new Collector " comment="UI Improvments. Replaced simple text console by a JUnit like tree based test result view." />
     <list id="f3159096-a797-4d9f-b62c-252319d9214f" name="Do not promote" comment="Do not promote" />
-    <list default="true" id="28bb9e8f-085b-4270-aa9f-2f273cd3d968" name="Reimplementation" comment="Readme update">
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\JsChilicatIdea\Test.out" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.AClassTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.BClassTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.CClassTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.ClassTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.DClassTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.other.COMTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\COM.Hello.js.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\COM.js.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\net.chilicat\Cat.js.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\org\ejohn\Class.js.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\org\ejohn\PersonAndNinja.js.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\syntaxhighlighter\scripts\shBrushJScript.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\syntaxhighlighter\scripts\shCore.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\syntaxhighlighter\styles\jschilicat.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\report.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Libs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Libs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvConfiguration.java" afterPath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvRunProfileState.java" afterPath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvRunProfileState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.form" afterPath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.java" afterPath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/build.xml" afterPath="$PROJECT_DIR$/JsChilicat/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Application.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutionEnv.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutionEnv.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutorType.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutorType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Main.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/DefaultTestConfig.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/DefaultTestConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/TestConfig.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/TestConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/AbstractWebDriverTestExecutor.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/AbstractWebDriverTestExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChilicatTestExecutor.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChilicatTestExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChromeTestExecutor.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChromeTestExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sf-dist/intellij-test-project/.idea/workspace.xml" afterPath="$PROJECT_DIR$/sf-dist/intellij-test-project/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="28bb9e8f-085b-4270-aa9f-2f273cd3d968" name="Reimplementation" comment="Readme update" />
     <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="$USER_HOME_GRAILS$/" />
     <option name="TRACKING_ENABLED" value="true" />

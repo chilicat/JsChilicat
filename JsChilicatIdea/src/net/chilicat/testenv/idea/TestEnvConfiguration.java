@@ -23,6 +23,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  */
@@ -37,6 +39,7 @@ public class TestEnvConfiguration extends ModuleBasedConfiguration<RunConfigurat
 
     private boolean serverIsEnabled = false;
     private String serverFile;
+    private long testTimeout = 30;
 
     public TestEnvConfiguration(String name, Project project, ConfigurationFactory factory) {
         super(name, new RunConfigurationModule(project), factory);
@@ -107,6 +110,20 @@ public class TestEnvConfiguration extends ModuleBasedConfiguration<RunConfigurat
 
         serverIsEnabled = JDOMExternalizer.readBoolean(element, "serverIsEnabled");
         serverFile = JDOMExternalizer.readString(element, "serverFile");
+        testTimeout = resolveTestTimeout(element);
+    }
+
+    private long resolveTestTimeout(Element element) {
+        String tmpTimeout = JDOMExternalizer.readString(element, "testTimeout");
+        long testTimout = 30;
+        try {
+            if(tmpTimeout != null) {
+                testTimout = Long.valueOf(tmpTimeout);
+            }
+        } catch(NumberFormatException ignore) {
+            Logger.getAnonymousLogger().log(Level.FINEST, "Wrong format: testTimeout.", ignore);
+        }
+        return testTimout;
     }
 
     private void resolveExecutionType(Element element) {
@@ -150,9 +167,10 @@ public class TestEnvConfiguration extends ModuleBasedConfiguration<RunConfigurat
 
         JDOMExternalizer.write(element, "serverIsEnabled", serverIsEnabled);
         JDOMExternalizer.write(element, "serverFile", serverFile);
+        JDOMExternalizer.write(element, "testTimeout", String.valueOf(testTimeout));
     }
 
-    public void setConfiguration(String srcDir, String testDir, String libraries, TestUnitFramework framework, ExecutorType executionType, boolean coverageSelected, String workingDir) {
+    public void setConfiguration(String srcDir, String testDir, String libraries, TestUnitFramework framework, ExecutorType executionType, boolean coverageSelected, String workingDir, long testTimeout) {
         this.srcDir = srcDir;
         this.testDir = testDir;
         this.libraries = libraries;
@@ -160,6 +178,7 @@ public class TestEnvConfiguration extends ModuleBasedConfiguration<RunConfigurat
         this.executionType = executionType;
         this.coverageSelected = coverageSelected;
         this.workingDir = workingDir;
+        this.testTimeout = testTimeout;
     }
 
     public void setServerConfig(boolean selected, String text) {
@@ -244,5 +263,9 @@ public class TestEnvConfiguration extends ModuleBasedConfiguration<RunConfigurat
 
     public boolean isCoverageSelected() {
         return coverageSelected;
+    }
+
+    public long getTestTimeout() {
+        return testTimeout;
     }
 }

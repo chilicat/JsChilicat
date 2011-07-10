@@ -7,27 +7,11 @@
     <property name="production-libs" value="${libs}/production"/>
     <property name="test-libs" value="${libs}/test"/>
 
+	<property name="user.name" value="chilicat"/>
+    
+	
     <mkdir dir="${build}"/>
     <mkdir dir="${dist}"/>
-
-
-    <target name="cls">
-        <path id="class.path">
-            <!-- include all jars in the lib directory and all sub-directories -->
-            <fileset dir="${production-libs}">
-                <include name="**/*.jar" />
-            </fileset>
-        </path>
-
-        <pathconvert property="relative.dir" refid="class.path">
-            <globmapper from="${production-libs}/*" to="./*" />
-        </pathconvert>
-
-        <property name="cls" value="${relative.dir}" />
-
-        <echo message="${cls}"/>
-    </target>
-
 
     <target name="clean">
         <delete dir="${build}"/>
@@ -56,15 +40,31 @@
         </junitreport>
     </target>
 
-    <target name="sf-dist" depends="clean, assemble, report">
-        <copy todir="sf-dist/libs">
+    <target name="sf-dist" > <!-- depends="clean, assemble, report" -->
+		
+		<delete dir="sf-dist/libs/" />
+		
+		<copy todir="sf-dist/libs/">
             <fileset dir="${dist}/production">
                 <include name="**/*.jar"/>
             </fileset>
+		</copy>
+		
+        <copy todir="sf-dist/libs/external">
             <fileset dir="${production-libs}">
-                <include name="**/*.jar"/>
+                <include name="*.jar"/>
             </fileset>
         </copy>
-    </target>
+		
+		<copy todir="sf-dist/libs/external">
+            <fileset dir="${production-libs}/selenium">
+                <include name="*.jar"/>
+                <include name="*.jar"/>
+            </fileset>
+        </copy>
+		
 
+    </target>
+	
+	
 </project>

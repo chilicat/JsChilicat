@@ -45,6 +45,7 @@ public class TestEnvRunProfileState extends JavaCommandLineState {
     protected JavaParameters createJavaParameters() throws ExecutionException {
 
         JavaParameters javaParameters = new JavaParameters();
+
         Module module = config.getConfigurationModule().getModule();
 
         Sdk jdk = module == null ?
@@ -60,7 +61,7 @@ public class TestEnvRunProfileState extends JavaCommandLineState {
         File myPlugin = new File(PathManager.getPluginsPath(), "JsChilicatIdea");
 
         if(!myPlugin.exists()) {
-            throw new Error("Plugin dir:  " + myPlugin);
+            throw new Error("Plugin dir does not exist:  " + myPlugin);
         }
 
         File lib = new File(myPlugin, "lib");
@@ -68,7 +69,6 @@ public class TestEnvRunProfileState extends JavaCommandLineState {
         if(!myPlugin.exists()) {
             throw new Error("lib dir:  " + lib);
         }
-
 
         for (File file : lib.listFiles()) {
             if (file.getName().endsWith(".jar") && !file.getAbsolutePath().equals(thisPath)) {
@@ -79,6 +79,7 @@ public class TestEnvRunProfileState extends JavaCommandLineState {
         javaParameters.setWorkingDirectory(config.getWorkingDirectory(true));
 
         javaParameters.getProgramParametersList().add("-workingDir", config.getWorkingDirectory(true));
+        javaParameters.getProgramParametersList().add("-testTimeout", String.valueOf(config.getTestTimeout()));
         javaParameters.getProgramParametersList().add("-src", config.getSrcDir(true));
         javaParameters.getProgramParametersList().add("-src-test", config.getTestDir(true));
         javaParameters.getProgramParametersList().add("-remote"); // enable output for model parsing.

@@ -33,23 +33,23 @@ import net.chilicat.testenv.webdriver.HtmlUnitTestExecutor;
 * Time: 13:15:41
 */
 public enum ExecutorType {
-    chilicat("Chilicat", "Default test executor.", false) {
+    chilicat("Chilicat", "Default test executor.", false, true) {
         @Override
         public TestExecutor create() {
             return new RhinoTestExecutor(); //ChilicatTestExecutor();
         }},
-    chrome("Google Chrome", "Chrome test executor. No code coverage support.", false) {
+    chrome("Google Chrome", "Chrome test executor. No code coverage support.", false, false) {
         @Override
         public TestExecutor create() {
             return new ChromeTestExecutor();
         }},
-    firefox("Firefox", "Firefox test executor. No code coverage support.", false) {
+    firefox("Firefox", "Firefox test executor. No code coverage support.", false, false) {
         @Override
         public TestExecutor create() {
             return new FireFoxTestExecutor();
         }},
 
-    htmlunit("HtmlUnit", "HtmlUnit test executor. No code coverage support.", false) {
+    htmlunit("HtmlUnit", "HtmlUnit test executor. No code coverage support.", false, false) {
         @Override
         public TestExecutor create() {
             return new HtmlUnitTestExecutor();
@@ -58,11 +58,17 @@ public enum ExecutorType {
     private String doc;
     private String name;
     private boolean hide;
+    protected boolean supportsCodeCoverage;
 
-    ExecutorType(String name, String doc, boolean hide) {
+    ExecutorType(String name, String doc, boolean hide, boolean supportsCodeCoverage) {
         this.name = name;
         this.doc = doc;
         this.hide = hide;
+        this.supportsCodeCoverage = supportsCodeCoverage;
+    }
+
+    public boolean isSupportsCodeCoverage() {
+        return supportsCodeCoverage;
     }
 
     public String getDisplayName() {

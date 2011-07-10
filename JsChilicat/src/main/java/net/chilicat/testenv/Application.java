@@ -53,7 +53,7 @@ public class Application {
             check(env);
 
             server = HttpServer.newServer(env.getPort());
-            TestConfig config = new DefaultTestConfig(env.getLibraryFiles(), env.getSourceFiles(), env.getTestFiles(), server, env.getWorkingDirectory(), env.getServerFile(), TestUnitFramework.qunit);
+            TestConfig config = new DefaultTestConfig(env.getLibraryFiles(), env.getSourceFiles(), env.getTestFiles(), server, env.getWorkingDirectory(), env.getServerFile(), TestUnitFramework.qunit, env.getTestTimeout());
 
             TestExecutor executor;
             try {
@@ -138,9 +138,9 @@ public class Application {
             }
         }
 
-        checkFiles(env.getLibraryFiles(), "Library file doens't exist: {0}");
-        checkFiles(env.getSourceFiles(), "Source file doens't exist: {0}");
-        checkFiles(env.getTestFiles(), "Test file doens't exist: {0}");
+        checkFiles(env.getLibraryFiles(), "Library file doesn't exist: {0}");
+        checkFiles(env.getSourceFiles(), "Source file doesn't exist: {0}");
+        checkFiles(env.getTestFiles(), "Test file doesn't exist: {0}");
 
     }
 

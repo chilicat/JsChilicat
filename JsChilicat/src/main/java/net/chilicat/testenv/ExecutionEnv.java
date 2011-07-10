@@ -40,6 +40,7 @@ public class ExecutionEnv {
     private boolean remote = false;
     private File workingDirectory;
     private File serverFile;
+    private long testTimeout = 30000;
 
     private ExecutorType executorType = ExecutorType.chilicat;
     private List<File> sourceFiles = Collections.emptyList();
@@ -47,6 +48,14 @@ public class ExecutionEnv {
     private List<File> libraryFiles = Collections.emptyList();
 
     public ExecutionEnv() {
+    }
+
+    public long getTestTimeout() {
+        return testTimeout;
+    }
+
+    public void setTestTimeout(long testTimeout) {
+        this.testTimeout = testTimeout;
     }
 
     public boolean isJUnitReport() {

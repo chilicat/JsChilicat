@@ -18,10 +18,43 @@
     <list id="6abb13ea-d5e0-439f-a7cf-7046f818faa8" name="UI Improvments" comment="New implementation of Test" />
     <list id="ea7db0a5-7536-4894-8331-0a54c05be50d" name="new Collector " comment="UI Improvments. Replaced simple text console by a JUnit like tree based test result view." />
     <list id="f3159096-a797-4d9f-b62c-252319d9214f" name="Do not promote" comment="Do not promote" />
-    <list default="true" id="28bb9e8f-085b-4270-aa9f-2f273cd3d968" name="Reimplementation" comment="Selenium upgrade.">
+    <list default="true" id="28bb9e8f-085b-4270-aa9f-2f273cd3d968" name="Reimplementation" comment="Readme update">
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\JsChilicatIdea\Test.out" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.AClassTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.BClassTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.CClassTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.ClassTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.ejohn.DClassTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\TEST-org.other.COMTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\COM.Hello.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\COM.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\net.chilicat\Cat.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\org\ejohn\Class.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\org\ejohn\PersonAndNinja.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\syntaxhighlighter\scripts\shBrushJScript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\syntaxhighlighter\scripts\shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\coverage\syntaxhighlighter\styles\jschilicat.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dkuffner\dev\github\jschilicat\sf-dist\intellij-test-project\out\report.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Libs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Libs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.creole" afterPath="$PROJECT_DIR$/README.creole" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvConfiguration.java" afterPath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvRunProfileState.java" afterPath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvRunProfileState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.form" afterPath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.java" afterPath="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/build.xml" afterPath="$PROJECT_DIR$/JsChilicat/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Application.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutionEnv.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutionEnv.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutorType.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutorType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Main.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/DefaultTestConfig.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/DefaultTestConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/TestConfig.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/TestConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/AbstractWebDriverTestExecutor.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/AbstractWebDriverTestExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChilicatTestExecutor.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChilicatTestExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChromeTestExecutor.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChromeTestExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java" afterPath="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sf-dist/intellij-test-project/.idea/workspace.xml" afterPath="$PROJECT_DIR$/sf-dist/intellij-test-project/.idea/workspace.xml" />
     </list>
     <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="$USER_HOME_GRAILS$/" />
@@ -111,6 +144,19 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Main.java" line="35" class="net.chilicat.testenv.Main" package="net.chilicat.testenv">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
@@ -152,19 +198,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
+      <file leaf-file-name="ChromeTestExecutor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChromeTestExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="37" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.creole" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.creole">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="88" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.54111403">
+            <state line="56" column="23" selection-start="1958" selection-end="1958" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,16 +210,16 @@
       <file leaf-file-name="WebDriver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.0">
+            <state line="29" column="37" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebDriverWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java">
+      <file leaf-file-name="ChilicatTestExecutor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChilicatTestExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="9" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0">
+            <state line="129" column="46" selection-start="5072" selection-end="5072" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,52 +228,25 @@
       <file leaf-file-name="TestEnvRunProfileState.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvRunProfileState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="104" selection-start="2911" selection-end="2911" vertical-scroll-proportion="0.0">
+            <state line="60" column="97" selection-start="2370" selection-end="2370" vertical-scroll-proportion="-8.730769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JsChilicatIdea/META-INF/plugin.xml">
+      <file leaf-file-name="LICENSE" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sf-dist/bin/ant/LICENSE">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="118" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+            <state line="8" column="48" selection-start="261" selection-end="261" vertical-scroll-proportion="0.32458234">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/Utils.java">
+      <file leaf-file-name="WebDriverWrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="0" selection-start="4767" selection-end="4767" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="0" selection-start="7142" selection-end="7142" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractWebDriverTestExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/AbstractWebDriverTestExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="39" selection-start="5848" selection-end="5848" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestSuit.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/TestSuit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="22" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+            <state line="54" column="0" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -256,22 +266,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sf-dist/intellij-test-project/src/test/js/org/other/COM.HelloTest.js" />
-        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/rhino/RhinoTestExecutor.java" />
-        <option value="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvConfiguration.java" />
-        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/utils/JSLFileHandler.java" />
-        <option value="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/TestConsoleView.java" />
-        <option value="$PROJECT_DIR$/JsChilicat/src/test/java/net/chilicat/testenv/utils/JSLFileHandlerTest.java" />
+        <option value="$PROJECT_DIR$/sf-dist/intellij-test-project/src/main/lib/modernizr.js" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutionEnv.java" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Application.java" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/DefaultTestConfig.java" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/TestConfig.java" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/AbstractWebDriverTestExecutor.java" />
         <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Main.java" />
-        <option value="$PROJECT_DIR$/JsChilicat/src/main/resources/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/JsChilicatParser/src/net/chilicat/testenv/model/Module.java" />
-        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/Utils.java" />
+        <option value="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.form" />
+        <option value="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvConfiguration.java" />
         <option value="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvRunProfileState.java" />
-        <option value="$PROJECT_DIR$/JsChilicatIdea/META-INF/plugin.xml" />
-        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutorType.java" />
+        <option value="$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.java" />
         <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChromeTestExecutor.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/README.creole" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriver.java" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChilicatTestExecutor.java" />
+        <option value="$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java" />
       </list>
     </option>
   </component>
@@ -511,15 +521,13 @@
               <option name="myItemId" value="jschilicat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jschilicat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sf-dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="Libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -528,8 +536,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JsChilicatIdea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jschilicat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -624,7 +638,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -636,18 +649,19 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="149" />
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="132" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="27" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="151" />
-    <property name="options.splitter.main.proportions" value="0.23452158" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="options.splitter.main.proportions" value="0.23452158" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
@@ -666,22 +680,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="572" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="474" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
-    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
     <property name="project.structure.side.proportion" value="0.23477407" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -714,7 +728,7 @@
       <recent name="D:\dev\TestEnv\Rhino\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in JsChilicatParser">
+  <component name="RunManager" selected="Plugin.TestEnvPlugin">
     <configuration default="false" name="ResourceHelperTest.testResourceHelper" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="JsChilicat" />
@@ -865,24 +879,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="" />
@@ -909,6 +905,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -962,83 +976,11 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="false" name="ServerTest" type="JsChilicatTestEnv" factoryName="JsChilicat TestEnv">
-      <module name="" />
-      <setting name="sourceDir" value="./JsChilicatServer/src/main/resources/lib/jschilicatServer.js" />
-      <setting name="testDir" value="./JsChilicatServer/src/test/js" />
-      <setting name="libs" value="" />
-      <setting name="workingDir" value="$PROJECT_DIR$" />
-      <setting name="framework" value="qunit" />
-      <setting name="executionType" value="chilicat" />
-      <setting name="coverageSelected" value="false" />
-      <setting name="serverIsEnabled" value="false" />
-      <setting name="serverFile" value="" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54824" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JsChilicat Extenral" type="JsChilicatTestEnv" factoryName="JsChilicat TestEnv">
-      <module name="" />
-      <setting name="sourceDir" value="./WebDriver/js/src" />
-      <setting name="testDir" value="./WebDriver/js/test" />
-      <setting name="libs" value="./JsChilicat/src/main/resources/lib/jquery.js" />
-      <setting name="workingDir" value="./WebDriver/js" />
-      <setting name="framework" value="qunit" />
-      <setting name="executionType" value="chilicat" />
-      <setting name="coverageSelected" value="false" />
-      <setting name="serverIsEnabled" value="true" />
-      <setting name="serverFile" value="./WebDriver/js/server.js" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unnamed" type="JsChilicatTestEnv" factoryName="JsChilicat TestEnv">
-      <module name="" />
-      <setting name="sourceDir" value="Z:\libs\jquery\jquery.js" />
-      <setting name="testDir" value="Z:\sourceforge-3rd\jquery\test\unit" />
-      <setting name="libs" value="" />
-      <setting name="workingDir" value="$PROJECT_DIR$" />
-      <setting name="framework" value="qunit" />
-      <setting name="executionType" value="chilicat" />
-      <setting name="coverageSelected" value="false" />
-      <setting name="serverIsEnabled" value="false" />
-      <setting name="serverFile" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Test" type="JsChilicatTestEnv" factoryName="JsChilicat TestEnv">
-      <module name="" />
-      <setting name="sourceDir" value="./sf-dist/intellij-test-project/src/main/js" />
-      <setting name="testDir" value="./sf-dist/intellij-test-project/src/test/js" />
-      <setting name="libs" value="./sf-dist/intellij-test-project/src/main/lib/jquery.js" />
-      <setting name="workingDir" value="./sf-dist/intellij-test-project/src/test/html" />
-      <setting name="framework" value="qunit" />
-      <setting name="executionType" value="chrome" />
-      <setting name="coverageSelected" value="true" />
-      <setting name="serverIsEnabled" value="true" />
-      <setting name="serverFile" value="./sf-dist/intellij-test-project/src/test/js/server.jss" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63950" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="Qunit  Test" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="net.chilicat.testenv.Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="-libs Z:\sourceforge\TestEnv\JsChilicat\src\main\resources\lib\jquery.js;Z:\libs\ext-3.2.1\adapter\jquery\ext-jquery-adapter.js;Z:\libs\ext-3.2.1\ext-all.js -src Z:\sourceforge\TestEnv\sf-dist\intellij-test-project\src\main\js -src-test Z:\sourceforge\TestEnv\sf-dist\intellij-test-project\src\test\js -server Z:\sourceforge\TestEnv\sf-dist\intellij-test-project\src\test\js\server.jss -workingDir Z:\sourceforge\TestEnv\sf-dist\example\qunit\out -junitReport -coverage -chrome " />
+      <option name="PROGRAM_PARAMETERS" value="-libs Z:\sourceforge\TestEnv\JsChilicat\src\main\resources\lib\jquery.js;Z:\libs\ext-3.2.1\adapter\jquery\ext-jquery-adapter.js;Z:\libs\ext-3.2.1\ext-all.js -src Z:\sourceforge\TestEnv\sf-dist\intellij-test-project\src\main\js -src-test Z:\sourceforge\TestEnv\sf-dist\intellij-test-project\src\test\js -server Z:\sourceforge\TestEnv\sf-dist\intellij-test-project\src\test\js\server.jss -workingDir Z:\sourceforge\TestEnv\sf-dist\example\qunit\out -junitReport -coverage -testTimeout 60 -chrome " />
       <option name="WORKING_DIRECTORY" value="file://Z:/sourceforge-3rd/jquery/jschilicat" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -1116,6 +1058,31 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="JsChilicat" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53377" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="AntTarget" enabled="false" antfile="file://$PROJECT_DIR$/sf-dist/build.xml" target="report" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Main Plain" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="net.chilicat.testenv.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://Z:/sourceforge-3rd/jquery/jschilicat" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JsChilicat" />
+      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
@@ -1181,19 +1148,92 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="12">
+    <configuration default="false" name="Test" type="JsChilicatTestEnv" factoryName="JsChilicat TestEnv">
+      <module name="" />
+      <setting name="sourceDir" value="./sf-dist/intellij-test-project/src/main/js" />
+      <setting name="testDir" value="./sf-dist/intellij-test-project/src/test/js" />
+      <setting name="libs" value="./sf-dist/intellij-test-project/src/main/lib/jquery.js" />
+      <setting name="workingDir" value="./sf-dist/intellij-test-project/src/test/html" />
+      <setting name="framework" value="qunit" />
+      <setting name="executionType" value="chrome" />
+      <setting name="coverageSelected" value="true" />
+      <setting name="serverIsEnabled" value="true" />
+      <setting name="serverFile" value="./sf-dist/intellij-test-project/src/test/js/server.jss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63950" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="JsChilicatTestEnv" factoryName="JsChilicat TestEnv">
+      <module name="" />
+      <setting name="sourceDir" value="Z:\libs\jquery\jquery.js" />
+      <setting name="testDir" value="Z:\sourceforge-3rd\jquery\test\unit" />
+      <setting name="libs" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="framework" value="qunit" />
+      <setting name="executionType" value="chilicat" />
+      <setting name="coverageSelected" value="false" />
+      <setting name="serverIsEnabled" value="false" />
+      <setting name="serverFile" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ServerTest" type="JsChilicatTestEnv" factoryName="JsChilicat TestEnv">
+      <module name="" />
+      <setting name="sourceDir" value="./JsChilicatServer/src/main/resources/lib/jschilicatServer.js" />
+      <setting name="testDir" value="./JsChilicatServer/src/test/js" />
+      <setting name="libs" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="framework" value="qunit" />
+      <setting name="executionType" value="chilicat" />
+      <setting name="coverageSelected" value="false" />
+      <setting name="serverIsEnabled" value="false" />
+      <setting name="serverFile" value="" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54824" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="JsChilicat Extenral" type="JsChilicatTestEnv" factoryName="JsChilicat TestEnv">
+      <module name="" />
+      <setting name="sourceDir" value="./WebDriver/js/src" />
+      <setting name="testDir" value="./WebDriver/js/test" />
+      <setting name="libs" value="./JsChilicat/src/main/resources/lib/jquery.js" />
+      <setting name="workingDir" value="./WebDriver/js" />
+      <setting name="framework" value="qunit" />
+      <setting name="executionType" value="chilicat" />
+      <setting name="coverageSelected" value="false" />
+      <setting name="serverIsEnabled" value="true" />
+      <setting name="serverFile" value="./WebDriver/js/server.js" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="13">
       <item index="0" class="java.lang.String" itemvalue="Application.Qunit  Test" />
       <item index="1" class="java.lang.String" itemvalue="Application.Server Test" />
       <item index="2" class="java.lang.String" itemvalue="Application.Chilicat Example ExtAll" />
       <item index="3" class="java.lang.String" itemvalue="Application.Chilicat Example (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ResourceHelperTest.testResourceHelper" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.net.chilicat.testenv.core.resource in JsChilicat" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.TestReportTreeModelTest" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.All in JsChilicatParser" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.JSLFileHandlerTest" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.Unnamed" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.All in JsChilicat" />
-      <item index="11" class="java.lang.String" itemvalue="Plugin.TestEnvPlugin" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main Plain" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ResourceHelperTest.testResourceHelper" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.net.chilicat.testenv.core.resource in JsChilicat" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.TestReportTreeModelTest" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.All in JsChilicatParser" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.JSLFileHandlerTest" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.Unnamed" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.All in JsChilicat" />
+      <item index="12" class="java.lang.String" itemvalue="Plugin.TestEnvPlugin" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1238,16 +1278,16 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="Z:\sourceforge\TestEnv\JsChilicatServer" />
-          <option name="myCopyRoot" value="Z:\sourceforge\TestEnv\JsChilicatServer" />
+          <option name="myVcsRoot" value="Z:\sourceforge\TestEnv\JsChilicatIdea" />
+          <option name="myCopyRoot" value="Z:\sourceforge\TestEnv\JsChilicatIdea" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="Z:\sourceforge\TestEnv\JsChilicatParser" />
           <option name="myCopyRoot" value="Z:\sourceforge\TestEnv\JsChilicatParser" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="Z:\sourceforge\TestEnv\JsChilicatIdea" />
-          <option name="myCopyRoot" value="Z:\sourceforge\TestEnv\JsChilicatIdea" />
+          <option name="myVcsRoot" value="Z:\sourceforge\TestEnv\JsChilicatServer" />
+          <option name="myCopyRoot" value="Z:\sourceforge\TestEnv\JsChilicatServer" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="Z:\sourceforge\TestEnv\sf-dist" />
@@ -1258,12 +1298,12 @@
           <option name="myCopyRoot" value="Z:\sourceforge\TestEnv\.idea" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="Z:\sourceforge\TestEnv\JsChilicat" />
-          <option name="myCopyRoot" value="Z:\sourceforge\TestEnv\JsChilicat" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
           <option name="myVcsRoot" value="Z:\sourceforge\TestEnv" />
           <option name="myCopyRoot" value="Z:\sourceforge\TestEnv" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="Z:\sourceforge\TestEnv\JsChilicat" />
+          <option name="myCopyRoot" value="Z:\sourceforge\TestEnv\JsChilicat" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -1322,33 +1362,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21806452" sideWeight="0.6239554" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32285714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15935484" sideWeight="0.55431753" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15935484" sideWeight="0.6239554" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14" sideWeight="0.57122904" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4345404" sideWeight="0.99824715" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37604457" sideWeight="0.98746383" order="3" side_tool="false" content_ui="tabs" x="0" y="226" width="10327" height="408" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4345404" sideWeight="0.99824715" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37604457" sideWeight="0.98746383" order="3" side_tool="false" content_ui="tabs" x="0" y="226" width="10327" height="408" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.0" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30501392" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967405" sideWeight="0.67" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.57122904" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5258856" sideWeight="0.53914326" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30064517" sideWeight="0.6239554" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50714284" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.77354836" order="2" side_tool="false" content_ui="tabs" x="42" y="610" width="1544" height="222" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21806452" sideWeight="0.55431753" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21290323" sideWeight="0.39275765" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5041783" sideWeight="0.77354836" order="2" side_tool="false" content_ui="tabs" x="42" y="610" width="1544" height="222" />
       <window_info id="JSTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6157143" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36452514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21290323" sideWeight="0.67270195" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Properties" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46089387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30501392" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967743" sideWeight="0.6312849" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1378,7 +1418,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Selenium upgrade." />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1391,7 +1431,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="New implementation of Test" />
     <MESSAGE value="cleanup Resources" />
     <MESSAGE value="Reimplementation: Use new core to execute env" />
     <MESSAGE value="Reimplementation: New implementation of Parser and TestEnv model. Implementation of (Remote-)MessageBus." />
@@ -1416,6 +1455,7 @@
     <MESSAGE value="Add support for browser execution&#10;" />
     <MESSAGE value="Adapt to new intelij 10.5&#10;Add jsl support" />
     <MESSAGE value="Selenium upgrade." />
+    <MESSAGE value="Readme update" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1483,90 +1523,116 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/resources/META-INF/MANIFEST.MF">
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_26/jre/lib/rt.jar!/javax/swing/SpinnerNumberModel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="153" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" />
+        <state line="15" column="29" selection-start="684" selection-end="702" vertical-scroll-proportion="0.23255815">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JsChilicatParser/src/net/chilicat/testenv/model/Module.java">
+    <entry file="file://$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0" />
+        <state line="172" column="23" selection-start="6781" selection-end="6781" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JsChilicatParser/src/net/chilicat/testenv/model/DefaultTestReportModel.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/roots/RootProvider.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="101" selection-start="6636" selection-end="6636" vertical-scroll-proportion="0.0" />
+        <state line="5" column="17" selection-start="168" selection-end="180" vertical-scroll-proportion="0.22020726">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/report/FailedTestsReport.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/projectRoots/Sdk.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0" />
+        <state line="23" column="40" selection-start="767" selection-end="767" vertical-scroll-proportion="0.48872182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/ExecutorType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="4" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_26/jre/lib/rt.jar!/javax/swing/plaf/basic/BasicTextUI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="17" selection-start="11341" selection-end="11341" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_26/jre/lib/rt.jar!/javax/swing/TransferHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="16" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/ui/RunProfileSettingsPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="279" column="39" selection-start="10919" selection-end="10919" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="25" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChromeTestExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="47" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sf-dist/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" />
+        <state line="56" column="23" selection-start="1958" selection-end="1958" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.0" />
+        <state line="29" column="37" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/WebDriverWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="9" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0" />
+        <state line="54" column="0" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/ChilicatTestExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="46" selection-start="5072" selection-end="5072" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/util/PathUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="806" selection-end="824" vertical-scroll-proportion="0.33262712">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JsChilicatIdea/src/net/chilicat/testenv/idea/TestEnvRunProfileState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="104" selection-start="2911" selection-end="2911" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsChilicatIdea/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="118" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="0" selection-start="4767" selection-end="4767" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="0" selection-start="7142" selection-end="7142" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+        <state line="60" column="97" selection-start="2370" selection-end="2370" vertical-scroll-proportion="-8.730769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/core/TestSuit.java">
+    <entry file="file://$PROJECT_DIR$/sf-dist/bin/ant/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsChilicat/src/main/java/net/chilicat/testenv/webdriver/AbstractWebDriverTestExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="39" selection-start="5848" selection-end="5848" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.creole">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="88" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.54111403">
+        <state line="8" column="48" selection-start="261" selection-end="261" vertical-scroll-proportion="0.32458234">
           <folding />
         </state>
       </provider>
@@ -1604,7 +1670,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.23477407" />
               </list>
             </option>
           </splitter-proportions>
@@ -1629,6 +1695,7 @@
             <option name="proportions">
               <list>
                 <option value="0.23477407" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1636,7 +1703,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Rhino_Doc</last-edited>
+          <last-edited>Libs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

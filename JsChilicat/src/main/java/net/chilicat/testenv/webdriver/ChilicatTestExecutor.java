@@ -57,24 +57,24 @@ public class ChilicatTestExecutor extends AbstractWebDriverTestExecutor {
             scope.defineFunctionProperties(Defaults.getNames(), Defaults.class, ScriptableObject.DONTENUM);
 
             context.setErrorReporter(new ErrorReporter() {
-                            public void warning(String detail, String sourceName, int lineNumber, String lineSource, int columnNumber) {
-                                bus.log(String.format("Warning: %s %s %s %s %s ", detail, sourceName, lineNumber, lineSource, columnNumber));
-                            }
+                public void warning(String detail, String sourceName, int lineNumber, String lineSource, int columnNumber) {
+                    bus.log(String.format("Warning: %s %s %s %s %s ", detail, sourceName, lineNumber, lineSource, columnNumber));
+                }
 
-                            public void error(String detail, String sourceName, int lineNumber, String lineSource, int columnNumber) {
-                                bus.log(String.format("Warning: %s %s %s %s %s ", detail, sourceName, lineNumber, lineSource, columnNumber));
-                            }
+                public void error(String detail, String sourceName, int lineNumber, String lineSource, int columnNumber) {
+                    bus.log(String.format("Warning: %s %s %s %s %s ", detail, sourceName, lineNumber, lineSource, columnNumber));
+                }
 
-                            public EvaluatorException runtimeError(String detail, String sourceName, int lineNumber, String lineSource, int columnNumber) {
-                                return new EvaluatorException(detail, sourceName, lineNumber, lineSource, columnNumber);
-                            }
-                        });
+                public EvaluatorException runtimeError(String detail, String sourceName, int lineNumber, String lineSource, int columnNumber) {
+                    return new EvaluatorException(detail, sourceName, lineNumber, lineSource, columnNumber);
+                }
+            });
 
 
             JsMessageBusInit.createInScope(context, scope, new AbstractMessageBus() {
                 @Override
                 public void print(String message) {
-                    
+
                 }
             });
             loadRuntime(context, scope);
@@ -137,7 +137,7 @@ public class ChilicatTestExecutor extends AbstractWebDriverTestExecutor {
             Context context = Context.enter();
             context.evaluateString(scope, "window.location ='" + location + "';", "Load: " + location, 1, null);
             Context.exit();
-          //  context.evaluateString(scope, "window.QUnit.start();", "Reinit qunit", 1, null);
+            //  context.evaluateString(scope, "window.QUnit.start();", "Reinit qunit", 1, null);
         }
     }
 }

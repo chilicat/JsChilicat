@@ -1,3 +1,4 @@
+
 package net.chilicat.testenv.webdriver;
 
 import net.chilicat.testenv.core.*;
@@ -32,7 +33,6 @@ public abstract class AbstractWebDriverTestExecutor implements TestExecutor {
     private WebDriver driver;
     private List<String> resources = new ArrayList<String>();
     private String libs;
-    private DefaultTestServer jschilicatServer;
     private Bus blockingBus;
     private Coverage coverage = Coverage.nullCoverage();
     private MessageBus messagebus;
@@ -80,10 +80,10 @@ public abstract class AbstractWebDriverTestExecutor implements TestExecutor {
 
             libs = buf.toString();
 
-            blockingBus = new Bus();
+            blockingBus = new Bus(config.getTestTimeout());
 
 
-            jschilicatServer = new DefaultTestServer(config.getServer(), "/lib/jschilicat-server.js", Collections.<String, String>emptyMap());
+            DefaultTestServer jschilicatServer = new DefaultTestServer(config.getServer(), "/lib/jschilicat-server.js", Collections.<String, String>emptyMap());
             jschilicatServer.init(new ScriptInit() {
                 public void init(Context cx, ScriptableObject scope) {
                     final MessageBus messageBus = MessageBusFactory.composite(bus, blockingBus);
@@ -204,6 +204,11 @@ public abstract class AbstractWebDriverTestExecutor implements TestExecutor {
         private final Object lock = new Object();
 
         volatile long lastActivity;
+        private final long testTimeout;
+
+        public Bus(long testTimeout) {
+            this.testTimeout = testTimeout;
+        }
 
 
         @Override
@@ -233,21 +238,12 @@ public abstract class AbstractWebDriverTestExecutor implements TestExecutor {
 
 
         public void await() {
-
-            long timeout = 30000;
-
-            try {
-                timeout = Long.parseLong(System.getProperty("testTimeout", "30000"));
-            } catch (NumberFormatException w) {
-                Logger.getAnonymousLogger().warning("System property 'testTimeout' wrong format: " + System.getProperty("testTimeout"));
-            }
-
             lastActivity = System.currentTimeMillis();
 
             while (!Thread.currentThread().isInterrupted()) {
                 synchronized (lock) {
                     long now = System.currentTimeMillis();
-                    if (now - lastActivity > timeout) {
+                    if (now - lastActivity > testTimeout) {
                         throw new TestEnvException("Timeout exception");
                     }
 

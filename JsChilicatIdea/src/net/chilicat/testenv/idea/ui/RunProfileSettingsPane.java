@@ -36,6 +36,7 @@ public class RunProfileSettingsPane extends SettingsEditor<TestEnvConfiguration>
     private JCheckBox serverCheckBox;
     private JTextField serverFileTxt;
     private JButton serverButton;
+    private JSpinner timeoutSpinner;
 
     private final DefaultListModel libraryModel = new DefaultListModel();
     private final TestEnvConfiguration config;
@@ -136,6 +137,7 @@ public class RunProfileSettingsPane extends SettingsEditor<TestEnvConfiguration>
                 b.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         RunProfileSettingsPane.this.browserType = fw;
+                        codeCoverageReportCheckBox.setEnabled(RunProfileSettingsPane.this.browserType.isSupportsCodeCoverage());
                     }
                 });
                 b.putClientProperty("ExecutorType", fw);
@@ -163,6 +165,7 @@ public class RunProfileSettingsPane extends SettingsEditor<TestEnvConfiguration>
             }
         });
 
+        timeoutSpinner.setModel(new SpinnerNumberModel(30, 10, Integer.MAX_VALUE, 1));
         // updateServerSection();
     }
 
@@ -235,22 +238,33 @@ public class RunProfileSettingsPane extends SettingsEditor<TestEnvConfiguration>
 
         browserType = testEnvConfiguration.getExecutionType();
         codeCoverageReportCheckBox.setSelected(testEnvConfiguration.isCoverageSelected());
+        codeCoverageReportCheckBox.setEnabled(browserType.isSupportsCodeCoverage());
 
         serverFileTxt.setText(testEnvConfiguration.getServerFile(false));
         serverCheckBox.setSelected(testEnvConfiguration.isServerIsEnabled());
+
+        timeoutSpinner.setValue(testEnvConfiguration.getTestTimeout());
 
         updateServerSection();
     }
 
     @Override
     protected void applyEditorTo(TestEnvConfiguration testEnvConfiguration) throws ConfigurationException {
-        testEnvConfiguration.setConfiguration(sourceTxt.getText(), testTxt.getText(), getLibraries(), testEnvConfiguration.getFramework(), browserType, codeCoverageReportCheckBox.isSelected(), workingDirTxt.getText());
+        long timeout = testEnvConfiguration.getTestTimeout();
+        try {
+            final Object timeoutObj = timeoutSpinner.getValue();
+            Long.valueOf(timeoutObj.toString());
+        } catch (NumberFormatException ignore) {
+            // wrong value
+        }
+
+        testEnvConfiguration.setConfiguration(sourceTxt.getText(), testTxt.getText(), getLibraries(), testEnvConfiguration.getFramework(), browserType, codeCoverageReportCheckBox.isSelected(), workingDirTxt.getText(), timeout);
         testEnvConfiguration.setServerConfig(serverCheckBox.isSelected(), serverFileTxt.getText());
         updateServerSection();
     }
 
     public String getLibraries() {
-        StringBuffer b = new StringBuffer();
+        StringBuilder b = new StringBuilder();
         for (int i = 0; i < libraryModel.size(); i++) {
             if (b.length() > 0) {
                 b.append("|");

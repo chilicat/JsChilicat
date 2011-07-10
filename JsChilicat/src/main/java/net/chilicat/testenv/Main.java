@@ -26,6 +26,7 @@ public final class Main {
     private static final String FRAMEWORK = "framework";
 
     private static final String SERVER = "server";
+    private static final String TEST_TIMEOUT = "testTimeout";
 
     public static void main(String[] args) {
         try {
@@ -35,8 +36,16 @@ public final class Main {
             final List<File> testFiels = toFileList(argList.getStrings(SRC_TEST), "\nError: Test file doesn't exist: ");
             final List<File> sourceFiles = toFileList(argList.getStrings(SRC), "\nError: Source file doesn't exist: ");
 
+            final String timeoutStr = argList.getString(TEST_TIMEOUT, "30");
+            long testTimeout;
+            try {
+                testTimeout = Long.valueOf(timeoutStr) * 1000;
+            } catch (NumberFormatException e) {
+                throw new SetupFailedException("Illegal value for testTimeout. The testTimeout value must be a number.");
+            }
 
             final ExecutionEnv env = new ExecutionEnv();
+            env.setTestTimeout(testTimeout);
             env.setJunitReport(argList.getBoolean(JUNIT_REPORT, false));
             env.setCoverageReport(argList.getBoolean(COVERAGE_REPORT, false));
             env.setRemote(argList.getBoolean(REMOTE, false));
@@ -135,6 +144,7 @@ public final class Main {
         argList.option(PORT).type(Type.OPTIONAL).hasArgument(true).help("8182").desc("Set port which should be used by internal Http server. Please note: If port in used than application will fail. If <port> is not set than application tries automatically to find a unused port. Default Port is 8182");
         argList.option(COVERAGE_REPORT).type(Type.OPTIONAL).hasArgument(false).desc("Enables code coverage report");
         argList.option(JUNIT_REPORT).type(Type.OPTIONAL).hasArgument(false).desc("Enables junit report output.");
+        argList.option(TEST_TIMEOUT).type(Type.OPTIONAL).hasArgument(true).desc("Specifies the timeout în seconds per test file. Default is 30 seconds");
 
         for (ExecutorType type : ExecutorType.values()) {
             argList.option(type.toString()).type(Type.OPTIONAL).hasArgument(false).desc(type.getDoc()).hide(type.isHidden());

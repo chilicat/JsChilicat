@@ -26,7 +26,7 @@ public class ChromeTestExecutor extends AbstractWebDriverTestExecutor {
             return new WebDriverWrapper(new ChromeDriver(build), new Runnable() {
                 public void run() {
                     build.stop();
-                    if(!driver.delete()) {
+                    if (!driver.delete()) {
                         Logger.getAnonymousLogger().warning("Couldn't delete chrome driver: " + driver);
                     }
                 }
@@ -38,19 +38,23 @@ public class ChromeTestExecutor extends AbstractWebDriverTestExecutor {
     }
 
     private File getDriverFile() throws IOException {
-        final InputStream in;
+        final File tmpFolder = new File(System.getProperty("java.io.tmpdir"));
         final File tempFile;
+        final String resource;
         if (Utils.isWindows()) {
-            in = this.getClass().getResourceAsStream("/executables/chromedriver.exe");
-            tempFile = File.createTempFile("chromedriver", ".exe");
-        } else if(Utils.isMac()) {
-            in = this.getClass().getResourceAsStream("/executables/chromedriver");
-            tempFile = File.createTempFile("chromedriver", "");
+            resource = "/executables/chromedriver.exe";
+            tempFile = new File(tmpFolder, "js_chromedriver.exe");
+        } else if (Utils.isMac()) {
+            resource = "/executables/chromedriver";
+            tempFile = new File(tmpFolder, "js_chromedriver");
         } else {
             throw new Error("Unsupported OS");
         }
 
-        Utils.transfer(in, true, new FileOutputStream(tempFile), true);
+        if (!tempFile.exists()) {
+            final InputStream in = this.getClass().getResourceAsStream(resource);
+            Utils.transfer(in, true, new FileOutputStream(tempFile), true);
+        }
         return tempFile;
     }
 

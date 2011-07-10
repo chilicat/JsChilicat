@@ -2,6 +2,7 @@
 
     <property name="module_build" value="${build}/JsChilicat/production"/>
     <property name="module_build_test" value="${build}/JsChilicat/test"/>
+    
     <mkdir dir="${module_build}"/>
     <mkdir dir="${module_build_test}"/>
 
@@ -38,12 +39,25 @@
         <jar destfile="${dist}/test/jschilicat-test.jar" basedir="${module_build_test}"/>
     </target>
 
-    <target name="assemble" depends="compile">
+    <target name="assemble" depends="compile, build.classpath">
         <copy todir="${module_build}">
             <fileset dir="src/main/resources"/>
         </copy>
         <jar destfile="${dist}/production/jschilicat.jar" basedir="${module_build}"
-             manifest="src/main/resources/META-INF/MANIFEST.MF"/>
+             >
+		
+			<!-- define MANIFEST.MF -->
+			<manifest>
+			  <attribute name="Built-By" value="chilicat" />
+			  <attribute name="Main-Class" value="net.chilicat.testenv.Main" />
+			  <section name="common">
+				<attribute name="Implementation-Vendor" value="chilicat.net" />
+			  </section>
+		 
+			  <!-- finally, use the magically generated libs path -->
+			  <attribute name="Class-Path" value="${jschilicat-cls} ${cls}" />
+			</manifest>		
+		</jar>
     </target>
 
     <target name="test" depends="assemble-test">
@@ -64,5 +78,49 @@
                 </fileset>
             </batchtest>
         </junit>
+    </target>
+	
+	
+	<target name="build.classpath">
+        <!-- create a property containing all .jar files, prefix lib/, and seperated with a space -->
+	  <pathconvert property="cls" pathsep=" ">
+	  
+		<mapper>
+			  <chainedmapper>
+		 
+				<!-- remove absolute path -->
+				<flattenmapper />
+		 
+				<!-- add lib/ prefix -->
+				<globmapper from="*" to="external/*" />
+			  </chainedmapper>
+		</mapper>
+	 
+		<path>
+		  <!-- lib.home contains all jar files, in several subdirectories -->
+		  <fileset dir="${production-libs}">
+			<include name="**/*.jar" />
+		  </fileset>
+		
+		</path>
+		
+	  </pathconvert>
+	  
+	  
+	  <pathconvert property="jschilicat-cls" pathsep=" ">
+	  
+		<mapper>
+			  <chainedmapper>
+				<!-- remove absolute path -->
+				<flattenmapper />
+			  </chainedmapper>
+		</mapper>
+	 
+		<path>
+			<pathelement path="jschilicat-parser.jar" />
+			<pathelement path="jschilicat-server.jar" />
+		</path>
+		
+	  </pathconvert>
     </target>
 </project>

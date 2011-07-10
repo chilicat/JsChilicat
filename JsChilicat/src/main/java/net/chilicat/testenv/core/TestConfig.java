@@ -9,6 +9,11 @@ import java.util.List;
  */
 public interface TestConfig {
 
+    /**
+     * Get timeout in milliseconds
+     * @return the time out. <1 means no timeout.
+     */
+    public long getTestTimeout();
     public TestUnitFramework getFramework();
 
     public File getWorkingDirectory();

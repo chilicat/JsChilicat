@@ -14,10 +14,10 @@ public class DefaultTestConfig implements TestConfig {
     private final HttpServer server;
     private final File workingDirectory;
     private final File jsServerFile;
-
+    private final long testTimeout;
     private final TestUnitFramework framework;
 
-    public DefaultTestConfig(List<File> libraries, List<File> sources, List<File> tests, HttpServer server, File workingDirectory, File serverFile, TestUnitFramework framework) {
+    public DefaultTestConfig(List<File> libraries, List<File> sources, List<File> tests, HttpServer server, File workingDirectory, File serverFile, TestUnitFramework framework, long testTimeout) {
         if (libraries == null) {
             throw new NullPointerException("libraries");
         }
@@ -38,6 +38,11 @@ public class DefaultTestConfig implements TestConfig {
         this.workingDirectory = workingDirectory;
         this.framework = framework;
         this.jsServerFile = serverFile;
+        this.testTimeout = testTimeout;
+    }
+
+    public long getTestTimeout() {
+        return testTimeout;
     }
 
     public File getServerFile() {

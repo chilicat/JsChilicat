@@ -2,9 +2,11 @@
   <library name="Libs">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/libs/production" />
+      <root url="file://$PROJECT_DIR$/libs/production/selenium" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
     <jarDirectory url="file://$PROJECT_DIR$/libs/production" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/production/selenium" recursive="false" />
   </library>
 </component>

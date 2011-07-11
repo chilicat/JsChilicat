@@ -26,6 +26,7 @@
     </orderEntry>
     <orderEntry type="library" name="Rhino_Doc" level="project" />
     <orderEntry type="module" module-name="JsChilicatServer" />
+    <orderEntry type="library" name="Libs" level="project" />
   </component>
 </module>
 

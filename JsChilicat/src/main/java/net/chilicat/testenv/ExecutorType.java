@@ -35,23 +35,23 @@ import net.chilicat.testenv.webdriver.HtmlUnitTestExecutor;
 public enum ExecutorType {
     chilicat("Chilicat", "Default test executor.", false, true) {
         @Override
-        public TestExecutor create() {
+        public TestExecutor create(ExecutionEnv env) {
             return new RhinoTestExecutor(); //ChilicatTestExecutor();
         }},
     chrome("Google Chrome", "Chrome test executor. No code coverage support.", false, false) {
         @Override
-        public TestExecutor create() {
+        public TestExecutor create(ExecutionEnv env) {
             return new ChromeTestExecutor();
         }},
     firefox("Firefox", "Firefox test executor. No code coverage support.", false, false) {
         @Override
-        public TestExecutor create() {
-            return new FireFoxTestExecutor();
+        public TestExecutor create(ExecutionEnv env) {
+            return new FireFoxTestExecutor(env);
         }},
 
     htmlunit("HtmlUnit", "HtmlUnit test executor. No code coverage support.", false, false) {
         @Override
-        public TestExecutor create() {
+        public TestExecutor create(ExecutionEnv env) {
             return new HtmlUnitTestExecutor();
         }};
 
@@ -83,5 +83,5 @@ public enum ExecutorType {
         return doc;
     }
 
-    public abstract TestExecutor create();
+    public abstract TestExecutor create(ExecutionEnv env);
 }

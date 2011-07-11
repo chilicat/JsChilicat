@@ -57,7 +57,7 @@ public class Application {
 
             TestExecutor executor;
             try {
-                executor = env.getExecutorType().create();
+                executor = env.getExecutorType().create(env);
             } catch(LinkageError e) {
                 throw new SetupFailedException(String.format("ExecutorType '%s' is not supported because web drivers are not installed.", env.getExecutorType().toString()), e);
             }

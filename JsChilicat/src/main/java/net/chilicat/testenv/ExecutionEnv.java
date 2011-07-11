@@ -47,6 +47,8 @@ public class ExecutionEnv {
     private List<File> testFiles = Collections.emptyList();
     private List<File> libraryFiles = Collections.emptyList();
 
+    private File firefoxProfile;
+
     public ExecutionEnv() {
     }
 
@@ -144,5 +146,14 @@ public class ExecutionEnv {
 
     public void setExecutorType(ExecutorType executorType) {
         this.executorType = executorType;
+    }
+
+
+    public void setFirefoxProfile(File firefoxProfile) {
+        this.firefoxProfile = firefoxProfile;
+    }
+
+    public File getFirefoxProfile() {
+        return firefoxProfile;
     }
 }

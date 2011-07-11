@@ -2,14 +2,17 @@ package net.chilicat.testenv;
 
 import net.chilicat.cmd.CommandArguments;
 import net.chilicat.cmd.Type;
-import net.chilicat.testenv.core.*;
+import net.chilicat.testenv.core.SetupFailedException;
+import net.chilicat.testenv.core.TestUnitFramework;
 import net.chilicat.testenv.utils.JSLFileHandler;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
-import java.util.logging.*;
-import java.util.logging.Formatter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  */
@@ -27,6 +30,7 @@ public final class Main {
 
     private static final String SERVER = "server";
     private static final String TEST_TIMEOUT = "testTimeout";
+    private static final String FIREFOX_PROFILE = "firefoxProfile";
 
     public static void main(String[] args) {
         try {
@@ -98,7 +102,7 @@ public final class Main {
     private static File initWorkingDirectory(CommandArguments argList) throws IOException {
         String workingDir = argList.getString(WORKING_DIR, null);
 
-        File reportOutput = null;
+        File reportOutput;
         if (workingDir != null) {
             reportOutput = new File(workingDir);
             if (!reportOutput.exists() && !reportOutput.mkdirs()) {
@@ -145,6 +149,8 @@ public final class Main {
         argList.option(COVERAGE_REPORT).type(Type.OPTIONAL).hasArgument(false).desc("Enables code coverage report");
         argList.option(JUNIT_REPORT).type(Type.OPTIONAL).hasArgument(false).desc("Enables junit report output.");
         argList.option(TEST_TIMEOUT).type(Type.OPTIONAL).hasArgument(true).desc("Specifies the timeout în seconds per test file. Default is 30 seconds");
+
+        argList.option(FIREFOX_PROFILE).type(Type.OPTIONAL).hasArgument(true).desc("Specifies the firefox profile directory.");
 
         for (ExecutorType type : ExecutorType.values()) {
             argList.option(type.toString()).type(Type.OPTIONAL).hasArgument(false).desc(type.getDoc()).hide(type.isHidden());

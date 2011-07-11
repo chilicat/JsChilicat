@@ -37,6 +37,7 @@ public class ChromeTestExecutor extends AbstractWebDriverTestExecutor {
 
     }
 
+
     private File getDriverFile() throws IOException {
         final File tmpFolder = new File(System.getProperty("java.io.tmpdir"));
         final File tempFile;

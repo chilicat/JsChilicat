@@ -31,13 +31,6 @@
         </javac>
     </target>
 
-    <target name="assemble-test" depends="compile-test">
-        <copy todir="${module_build_test}">
-            <fileset dir="src/test/resources"/>
-        </copy>
-        <jar destfile="${dist}/test/jschilicat-server-test.jar" basedir="${module_build_test}"/>
-    </target>
-
     <target name="assemble" depends="compile">
         <copy todir="${module_build}">
             <fileset dir="src/main/resources"/>
@@ -46,23 +39,7 @@
              manifest="src/main/resources/META-INF/MANIFEST.MF"/>
     </target>
 
-    <target name="test" depends="assemble-test">
-        <junit printsummary="yes" haltonfailure="false">
-            <formatter type="xml"/>
-            <classpath>
-                <fileset dir="${libs}">
-                    <include name="**/*.jar"/>
-                </fileset>
-                <fileset dir="${dist}">
-                    <include name="**/*.jar"/>
-                </fileset>
-            </classpath>
-
-            <batchtest fork="yes" todir="${build}/junit">
-                <fileset dir="src/test/java">
-                    <include name="**/*Test.java"/>
-                </fileset>
-            </batchtest>
-        </junit>
+    <target name="test">
+        <echo>No tests to assemble</echo>
     </target>
 </project>

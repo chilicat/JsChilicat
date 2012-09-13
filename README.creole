@@ -43,7 +43,7 @@ Start test in JsChilicat internal: \\
 If you have selected your browser than you must set you working directory. The working director
 will contain the test result and coverage files. By default is the current directory the working directory
 \\\\
-**java -jar jschilicat.jar -<browser> -workingDir=/dev/results**
+**java -jar jschilicat.jar -<browser> -workingDir /dev/results**
 \\\\
 Now we want to specify the our test sets. JsChilicat will differ between three sources: libraries, sources and tests.
 
@@ -57,17 +57,17 @@ The order of loading the liberties is always: \\
 
 Lets issue a hypothetical test run:
 
-**java -jar jschilicat.jar -<browser> -workingDir=/Users/jschilicat/dev/results \
-    -libs=/dev/libs -src=/dev/src -src-test=/dev/test/**
+**java -jar jschilicat.jar -<browser> -workingDir /Users/jschilicat/dev/results \
+    -libs /dev/libs -src /dev/src -src-test /dev/test/**
 \\
  As you can see I specified directories. For convenience reasons is it possible to do that.
  What happening is that JsChilicat will search recursive for *.js files and includes them.
  That's of course for many projects not a solution to go because most javascript libraries expect
  to be loaded in a certain order. That can be achieved by file lists. For example:
 
-**-libs=/dev/jquery.js;/dev/otherLib.js** \\
-**-src=...** \\
-**-src-test=...** \\
+**-libs /dev/jquery.js;/dev/otherLib.js** \\
+**-src ...** \\
+**-src-test ...** \\
 
  **Note:** The separator is platform depended. Windows uses semi-colon (;) and mac uses colon (:)
 
@@ -90,4 +90,4 @@ The file in a **.jsl** must be relative to the parent of the .jsl file.
 
 Just specify the .jsl file like a normal javascript file:
 
--test-src=/dev/example.jsl
+-test-src /dev/example.jsl

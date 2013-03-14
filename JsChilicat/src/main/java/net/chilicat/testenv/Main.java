@@ -148,7 +148,7 @@ public final class Main {
         argList.option(PORT).type(Type.OPTIONAL).hasArgument(true).help("8182").desc("Set port which should be used by internal Http server. Please note: If port in used than application will fail. If <port> is not set than application tries automatically to find a unused port. Default Port is 8182");
         argList.option(COVERAGE_REPORT).type(Type.OPTIONAL).hasArgument(false).desc("Enables code coverage report");
         argList.option(JUNIT_REPORT).type(Type.OPTIONAL).hasArgument(false).desc("Enables junit report output.");
-        argList.option(TEST_TIMEOUT).type(Type.OPTIONAL).hasArgument(true).desc("Specifies the timeout în seconds per test file. Default is 30 seconds");
+        argList.option(TEST_TIMEOUT).type(Type.OPTIONAL).hasArgument(true).desc("Specifies the timeout in seconds per test file. Default is 30 seconds");
 
         argList.option(FIREFOX_PROFILE).type(Type.OPTIONAL).hasArgument(true).desc("Specifies the firefox profile directory.");
 
